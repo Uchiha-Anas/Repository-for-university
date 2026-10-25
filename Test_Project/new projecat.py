@@ -1,4 +1,8 @@
-def calculator(num1, num2, operation):
+def calculator():
+ print ("Welcome to the calculator program")
+ num1 = float(input("Enter first number: "))
+ num2 = float(input("Enter second number: "))
+ operation = input("Enter operation (+, -, *, /): ")
  if operation == "+":
     result = num1 + num2    
  elif operation == "-":
@@ -14,10 +18,4 @@ def calculator(num1, num2, operation):
     result = "Error: Invalid operation"
  return result    
 
-
-
-print ("Welcome to the calculator program")
-print("Enter first number: ")
-print("Enter second number: ")
-print("Enter operation (+, -, *, /): ")
-calculator(20,10,"+")
+print("the result is: ",calculator())
